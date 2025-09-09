@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    float salario, novoSalario;
+    printf("Qual é seu salário: ");
+    scanf("%f", &salario);
+    
+    if (salario <= 2000){
+        novoSalario = salario * 1.3;
+    }
+    else{
+        novoSalario = salario * 1.10;
+    }
+    printf ("Seu novo salario é R$%.2f", novoSalario);
+    return 0;
+}
