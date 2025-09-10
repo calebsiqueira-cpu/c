@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float altura, peso, imc;
+
+    printf("Qual o seu peso? ");
+    scanf("%f", &peso);
+
+    printf("Qual sua altura? ");
+    scanf("%f", &altura);
+   
+    imc = peso / (altura * altura);
+
+    printf("\nSeu imc é: %.2f", imc);
+    
+    return 0;
+}
