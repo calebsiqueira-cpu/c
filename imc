@@ -13,5 +13,21 @@ int main() {
 
     printf("\nSeu imc é: %.2f", imc);
     
+    if (imc < 18.5){
+        printf("\nAbaixo do peso.");
+    }
+    else 
+        if (imc >= 18.5 && imc <= 24.9){
+            printf("\nPeso comum.");  
+        }
+        else
+            if (imc >= 25 && imc <= 29.9){
+                printf("\nSobrepeso.");
+            }
+            else
+                if (imc >= 30){
+                printf("\nObesidade.");
+                }
+
     return 0;
 }
